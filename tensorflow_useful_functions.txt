@@ -1,0 +1,13 @@
+tf.equal
+tf.where
+tf.cast
+tf.one_hot
+tf.concat
+tf.zeros_like
+tf.group: create the op to execute multiple tf_op at a time
+tf.stop_gradient
+tf.InteractiveSession(): good for prototyping; don't forget to close afterwards
+tf.get_variables: to select the variable to be reused properly
+
+# to define a dynamic shape tensor (which is not a ph):
+z_noise = tf.random_normal(shape=(tf.shape(x)[0], 1)) # where x has first-dim variable batch-size
